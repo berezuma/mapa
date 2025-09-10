@@ -23,6 +23,8 @@
         body {
             font-family: 'Inter', sans-serif;
             overflow: hidden;
+            -webkit-text-size-adjust: 100%; /* Chrome, Safari, etab. */
+            text-size-adjust: 100%;       /* Estandarra, Firefox barne */
         }
         #map {
             height: 100vh;
@@ -154,8 +156,7 @@
     <!-- Informazio Panela eta Botoia -->
     <div class="absolute bottom-4 right-4 z-20">
         <!-- Informazio panela -->
-        <div id="infoPanel" class="hidden absolute bottom-0 right-12 bg-white/95 backdrop-blur-sm shadow-xl rounded-lg w-80 text-sm text-gray-800 flex transition-transform duration-300 ease-in-out">
-            <div class="p-3 flex-grow space-y-2">
+<div id="infoPanel" class="hidden absolute bottom-14 sm:bottom-0 right-4 bg-white/95 backdrop-blur-sm shadow-xl rounded-lg w-[calc(100vw-2.5rem)] sm:w-80 text-sm text-gray-800 flex transition-transform duration-300 ease-in-out">            <div class="p-3 flex-grow space-y-2">
                  <p><span class="font-bold">Euskarazko WikiMapa</span>.</p>
                  <p> <a href="https://berezuma.com" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-600 hover:underline">Beñat Erezuma</a>-k garatua.</p>
                  <div class="border-t border-gray-300 !my-2"></div>
